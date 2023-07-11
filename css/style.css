@@ -360,12 +360,21 @@ a.btn:hover{
     border-bottom: 1px solid #eadea2a3;
 }
 @media (max-width:1200px){
+    .text_box{
+        padding: 5em 5rem;
+    }
     p,
     a.btn{
         font-size: var(--font-size3);
     }
 }
-@media (max-width:600px){
+@media (max-width:800px){
+    .text_box{
+        padding: 5em 5rem;
+    }
+    .text_box h1{
+        padding: 0 0 20px 0;
+    }
     #section_wrap ul li{
     width: 100%;
     }
@@ -388,7 +397,9 @@ a.btn:hover{
 }
 .sub_title{
     padding: 2vh 0 3vh 0;
+    font-size: var(--font-size2);
 }
+
 .product_service ul{
     display: flex;
     flex-wrap: wrap;
@@ -401,8 +412,12 @@ a.btn:hover{
     padding: 0 1.2rem;
     box-sizing: border-box;
 }
-.product_service ul li p{
+.product_service> ul> li> p{
     padding: 0.2em 0;
+    font-size: var(--font-size3);
+}
+.product_service ul li p.sub_text{
+    font-size: var(--font-size2);
 }
 .img_wrap{
     margin: 0 auto;
@@ -416,14 +431,22 @@ a.btn:hover{
 .product_service ul li img:hover{
     opacity: 1;
 }
-@media (max-width:600px){
+
+@media (max-width:800px){
+
     .product_service{
-        margin: 20vh auto;
+        margin: 15vh auto;
+    }
+    .product_service ul{
+        margin: 4vh 0 4vh;
     }
     .product_service ul li{
         width: 100%;
-        padding: 0 0 50px 0;
+        padding-bottom: 50px;
         margin: 0;
+    }
+    .product_service ul li:nth-child(3){
+        padding-bottom: 0px;
     }
     .title{
         font-size: 35px;
@@ -446,7 +469,7 @@ a.btn:hover{
 /* sleep_story */
 #sleep_story_wrap{
     background-image: url(../images/sleep_story_bg.png);
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
 }
 .sleep_story{
@@ -466,8 +489,19 @@ a.btn:hover{
 }
 
 @media (max-width:1200px){
+    .sleep_story{
+        margin: 20vh auto;
+    }
     #sleep_story_wrap> .sleep_story> .img_wrap{
         width: 80%;
+    }
+}
+@media (max-width:800px){
+    .sleep_story{
+        margin: 15vh auto;
+    }
+    .sleep_story p{
+        padding: 20px 0;
     }
 }
 
