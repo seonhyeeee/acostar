@@ -394,6 +394,7 @@ a.btn:hover{
 }
 .title{
     font-size: var(--font-size1);
+    line-height: 130%;
 }
 .sub_title{
     padding: 2vh 0 3vh 0;
